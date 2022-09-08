@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 const ProductPreview = ({ item, size }) => (
   <div className={`product-preview-container ${size}`}>
     <div className="product-image-container">
-      <HoverImage
+      {/* 
+    <HoverImage
         src={item.coverImage1Url}
         hoverSrc={item.secondaryImageUrl}
         className="image-side"
       />
+*/}
     </div>
     <div className="product-details-container">
       <div className="product-details-top">
