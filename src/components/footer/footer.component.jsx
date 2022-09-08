@@ -78,8 +78,8 @@ class Footer extends React.Component {
           </div>
         </div>
         <div className="right-side">
+          <h3>Keep up with our Antics</h3>
           <div className="email-input">
-            <h3>Keep up with our Antics</h3>
             <form className="sign-up-form" onSubmit={this.handleSubmit}>
               <FormInput
                 type="email"

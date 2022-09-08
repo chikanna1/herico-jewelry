@@ -36,6 +36,9 @@
     }
   }
   .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .email-input {
       .sign-up-form {
         display: flex;
@@ -44,7 +47,8 @@
         .submit {
           display: inline;
           align-self: flex-end;
-          margin-bottom: 30px;
+          padding-bottom: 70px;
+          padding-left: 10px;
           cursor: pointer;
         }
       }
