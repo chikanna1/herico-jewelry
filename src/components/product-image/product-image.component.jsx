@@ -13,7 +13,6 @@ import back_779 from "./images/versace-blue/back-779.jpg";
 import back_1020 from "./images/versace-blue/back-1020.jpg";
 import back_1200 from "./images/versace-blue/back-1200.jpg";
 import back_1426 from "./images/versace-blue/back-1426.jpg";
-import ProductPage from "../../pages/product-page/product-page.page";
 
 const smallImage =
   "https://images.shaneco.com/is/image/ShaneCo/necklace/570/Ruby-and-Diamond-Necklace-in-14k-Yellow-Gold-18-in._41080081_M.jpg";

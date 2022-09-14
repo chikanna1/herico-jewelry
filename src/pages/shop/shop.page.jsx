@@ -6,7 +6,6 @@ import ProductPreview from "../../components/product-preview/product-preview.com
 import { Link } from "react-router-dom";
 import { CategoriesContext } from "../../contexts/categories.context";
 import { Route, Routes, Navigate } from "react-router-dom";
-import ProductPage from "../../pages/product-page/product-page.page";
 import Menu, { SubMenu, Item as MenuItem } from "rc-menu";
 import "rc-menu/assets/index.css";
 
