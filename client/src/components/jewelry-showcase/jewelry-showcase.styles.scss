@@ -1,0 +1,13 @@
+.jewelry-showcase {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100vw;
+  height: 120vh;
+
+  &.mobil {
+    width: 100%;
+    height: 400px;
+    background-position-x: -90px;
+  }
+}

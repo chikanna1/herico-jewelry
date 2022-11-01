@@ -1,0 +1,43 @@
+.cart-dropdown-mobile {
+  position: absolute;
+  margin-top: 50px;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 80px;
+  right: 0;
+  z-index: 5;
+
+  .close-section {
+    width: 100%;
+    .close-button {
+      display: block;
+      margin-left: auto;
+      margin-right: 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .divider {
+      padding: 10px;
+      color: black;
+    }
+  }
+
+  .cart-section {
+    padding: 50px;
+    text-decoration: none;
+    font-family: "Vollkorn SC", serif;
+    color: black;
+    font-weight: 700;
+    .cart-items {
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
+    }
+  }
+}

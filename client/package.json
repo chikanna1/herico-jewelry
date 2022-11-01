@@ -1,0 +1,87 @@
+{
+  "name": "herico-jewelry",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/styles": "^4.11.5",
+    "@stripe/stripe-js": "^1.35.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.1.3",
+    "bootstrap": "^4.6.2",
+    "downshift": "^6.1.11",
+    "env-cmd": "^10.1.0",
+    "firebase": "^9.9.4",
+    "hamburger-react": "^2.5.0",
+    "node-sass": "^7.0.1",
+    "rc-menu": "^9.6.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-bootstrap-select-dropdown": "^1.3.10",
+    "react-burger-menu": "^3.0.8",
+    "react-collapsible": "^2.10.0",
+    "react-delay-render": "^0.1.2",
+    "react-dock": "^0.6.0",
+    "react-dom": "^18.2.0",
+    "react-hover-image": "^2.0.1",
+    "react-image-gallery": "^1.2.9",
+    "react-image-magnify": "^2.7.4",
+    "react-inner-image-zoom": "^3.0.2",
+    "react-player": "^2.10.1",
+    "react-redux": "^8.0.4",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-scrollmagic": "^2.3.0",
+    "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
+    "react-stars": "^2.2.5",
+    "reactjs-popup": "^2.0.5",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.1.6",
+    "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1",
+    "use-mailchimp-form": "^3.0.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.staging react-scripts start",
+    "build": "env-cmd -f .env.stagingreact-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "npm": "8.19.1",
+    "node": "16.17.0"
+  }
+}

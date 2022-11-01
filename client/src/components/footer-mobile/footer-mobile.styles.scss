@@ -1,0 +1,98 @@
+.footer-container-mobile {
+  height: 75vh;
+  padding: 50px 20px;
+  font-family: "Vollkorn SC", serif;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .top-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .left-side {
+      display: flex;
+      flex-direction: row;
+
+      .menu-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        width: 300px;
+
+        .menu-title {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: larger;
+        }
+
+        .footer-link {
+          text-decoration: none;
+          padding: 5px 0;
+          color: black;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .right-side {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .menu-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        width: 300px;
+
+        .menu-title {
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: larger;
+        }
+
+        .footer-link {
+          text-decoration: none;
+          padding: 5px 0;
+          color: black;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .email-input {
+      .sign-up-form {
+        display: flex;
+        flex-direction: row;
+
+        .submit {
+          display: inline;
+          align-self: flex-end;
+          padding-bottom: 70px;
+          padding-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .social-media-links {
+    margin-left: auto;
+    width: 75%;
+    .social-media-icon {
+      margin: 15px;
+      font-size: 25px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  overflow: hidden;
+}

@@ -1,0 +1,27 @@
+.product-image-container {
+  height: 600px;
+  width: 600px;
+
+  display: flex;
+  flex-direction: column;
+
+  .thumbnail-navigator {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 100px;
+    // background: white;
+    .thumbnail-image {
+      padding: 10px;
+
+      img {
+        cursor: pointer;
+        height: 75px;
+        border: 5px solid black;
+
+        &.active {
+          border: 5px solid gold;
+        }
+      }
+    }
+  }
+}

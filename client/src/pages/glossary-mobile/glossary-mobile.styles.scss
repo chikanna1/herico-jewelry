@@ -1,0 +1,41 @@
+.glossary-page-mobile-container {
+  padding: 20px 30px;
+  background-color: rgba(234, 179, 179, 0.103);
+  h1 {
+    // text-align: center;
+    font-size: 40px;
+    padding: 20px;
+  }
+  .alphabet-rows {
+    display: flex;
+    flex-direction: column;
+    .alphabet-row {
+      padding: 15px 0;
+      .alphabet-title {
+        font-size: 40px;
+        padding: 20px;
+      }
+    }
+    .alphabet-cards-row {
+      display: flex;
+      flex-direction: column;
+
+      .alphabet-card {
+        width: 400px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+
+        .alphabet-word {
+          font-size: 25px;
+          padding: 10px 0;
+        }
+        .alphabet-text {
+          font-size: 17px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

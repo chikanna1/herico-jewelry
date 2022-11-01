@@ -1,0 +1,25 @@
+.search-container {
+  width: 100vw;
+  padding: 0 50px;
+  overflow-x: hidden;
+  .search-input {
+    width: 100%;
+    .search-form {
+      display: flex;
+      flex-direction: row;
+
+      .group {
+        width: 100%;
+      }
+
+      .submit {
+        display: inline;
+        align-self: flex-end;
+        padding-bottom: 70px;
+        padding-left: 10px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
