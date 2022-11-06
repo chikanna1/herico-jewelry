@@ -14,11 +14,7 @@ export const popupReducer = (state = POPUP_INITIAL_STATE, action = {}) => {
         ...state,
         isPopupOpen: payload,
       };
-    case POPUP_ACTION_TYPES.SET_POPUP_ALREADY_OPENED:
-      return {
-        ...state,
-        popupAlreadyOpened: payload,
-      };
+
     default:
       return state;
   }

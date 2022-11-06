@@ -67,12 +67,14 @@ const Footer = () => {
           <Link className="footer-link" to="affirm">
             Affirm
           </Link>
+          {/*
           <Link className="footer-link" to="care-guide">
-            Care Guide
+          Care Guide
           </Link>
           <Link className="footer-link" to="size-guide">
-            Size Guide
+          Size Guide
           </Link>
+        */}
         </div>
       </div>
       <div className="right-side">

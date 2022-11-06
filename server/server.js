@@ -4,6 +4,10 @@ require("dotenv").config();
 const stripe = require("stripe")(process.env.REACT_STRIPE_KEY);
 const express = require("express");
 const app = express();
+const path = require("path");
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
 app.use(express.json());
 
 const YOUR_DOMAIN = process.env.CLIENT_URL;
@@ -34,8 +38,9 @@ app.post("/create-checkout-session", async (req, res) => {
     },
     line_items: line_items,
     mode: "payment",
-    success_url: `${YOUR_DOMAIN}/success.html`,
-    cancel_url: `${YOUR_DOMAIN}/cancel.html`,
+    // success_url: `${YOUR_DOMAIN}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${YOUR_DOMAIN}/checkout-success`,
+    cancel_url: `${YOUR_DOMAIN}/checkout`,
   });
 
   res.json({ id: session.id });

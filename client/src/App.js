@@ -42,6 +42,10 @@ import FAQsPageMobile from "./pages/faqs-mobile/faqs-mobile.page";
 
 import PrivacyPolicyPage from "./pages/privacy-policy/privacy-policy.page";
 import TermsOfServicePage from "./pages/terms-of-service/terms-of-service.page";
+import SeasonsDealsPage from "./pages/seasons-deals/seasons-deals.page";
+import AmbassadorProgramPage from "./pages/ambassador-program/ambassador-program.page";
+
+import CheckoutCompletePage from "./pages/checkout-complete/checkout-success.page";
 
 //Components
 import Header from "./components/header/header.component";
@@ -133,10 +137,21 @@ const App = () => {
             element={isMobileDevice ? <FAQsPageMobile /> : <FAQsPage />}
           />
           <Route exact path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route exact path="/seasons-deals" element={<SeasonsDealsPage />} />
+          <Route
+            exact
+            path="/brand-ambassador-program"
+            element={<AmbassadorProgramPage />}
+          />
           <Route
             exact
             path="/terms-of-service"
             element={<TermsOfServicePage />}
+          />
+          <Route
+            exact
+            path="/checkout-success"
+            element={<CheckoutCompletePage />}
           />
         </Routes>
       </ScrollToTop>

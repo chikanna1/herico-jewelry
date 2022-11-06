@@ -25,14 +25,14 @@ const Header = () => {
           <Link className="header-link" to="shop/products/all">
             SHOP
           </Link>
-          {/*
+
           <Link className="header-link" to="seasons-deals">
-          HOLIDAY GIFT SHOP
+            HOLIDAY GIFT SHOP
           </Link>
-          <Link className="header-link" to="article-of-month">
-          HERICO X AFRICA
+          {/*<Link className="header-link" to="article-of-month">
+            HERICO X AFRICA
           </Link>
-        */}
+  */}
         </div>
 
         <div className="logo">
@@ -57,8 +57,8 @@ const Header = () => {
               </Link>
             )*/}
 
-            <Link className="header-link" to="article-of-month">
-              REFER A FRIEND
+            <Link className="header-link" to="brand-ambassador-program">
+              AMBASSADOR PROGRAM
             </Link>
             <CartIcon />
           </div>

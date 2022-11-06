@@ -43,10 +43,7 @@ const SignUpPopup = () => {
   const { loading, error, success, message, handleSubmit } =
     useMailChimpForm(url);
 
-  const { fields, handleFieldChange } = useFormFields({
-    EMAIL: email,
-  });
-
+    
   const handleSubmitForm = async (event) => {
     event.preventDefault();
     setOpen(false);
