@@ -1,0 +1,260 @@
+.shop-page-mobile {
+  width: 100vw;
+  height: auto;
+  font-family: "Vollkorn", serif;
+
+  .shop-page-filters-mobile {
+    height: 300px;
+    padding: 50px 5px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+
+    .filters-title-text {
+      text-align: center;
+      text-transform: uppercase;
+      .filters-title {
+        font-size: 1.2rem;
+        padding: 10px 0;
+      }
+      .filters-subtitle {
+        font-size: 3.2rem;
+      }
+    }
+
+    .filters {
+      padding: 50px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      z-index: 0;
+      color: white;
+      text-align: center;
+
+      .filter-category {
+        padding: 10px 10px;
+        cursor: pointer;
+
+        p {
+          font-size: 20px;
+        }
+      }
+
+      //The content within the collaspable area
+      .filter-one {
+        .Collapsible {
+          background-color: rgba(0, 0, 0, 0.336);
+        }
+
+        //The content within the collaspable area
+        .Collapsible__contentInner {
+          padding: 15px;
+          border: 1px solid rgba(0, 0, 0, 0.336);
+
+          border-top: 0;
+
+          p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 20px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .Collapsible__trigger {
+          display: block;
+          font-weight: 400;
+          text-decoration: none;
+          position: relative;
+          border: 1px solid rgba(0, 0, 0, 0.336);
+          padding: 10px 40px;
+          background-color: rgba(0, 0, 0, 0.336);
+          color: white;
+
+          &:after {
+            font-family: "FontAwesome";
+            content: "\f107";
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: block;
+            transition: transform 300ms;
+          }
+
+          &.is-open {
+            &:after {
+              transform: rotateZ(180deg);
+            }
+          }
+
+          &.is-disabled {
+            opacity: 0.5;
+            background-color: grey;
+          }
+        }
+
+        .CustomTriggerCSS {
+          background-color: lightcoral;
+          transition: background-color 200ms ease;
+        }
+
+        .CustomTriggerCSS--open {
+          background-color: darkslateblue;
+        }
+
+        .Collapsible__custom-sibling {
+          padding: 5px;
+          font-size: 12px;
+          background-color: #cbb700;
+          color: black;
+        }
+      }
+
+      .filter-two {
+        .Collapsible {
+          background-color: rgba(0, 0, 0, 0.336);
+        }
+
+        //The content within the collaspable area
+        .Collapsible__contentInner {
+          padding: 15px;
+          border: 1px solid rgba(0, 0, 0, 0.336);
+          border-top: 0;
+
+          p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 20px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .Collapsible__trigger {
+          display: block;
+          font-weight: 400;
+          text-decoration: none;
+          position: relative;
+          border: 1px solid rgba(0, 0, 0, 0.336);
+          padding: 10px 40px;
+          background-color: rgba(0, 0, 0, 0.336);
+          color: white;
+
+          &:after {
+            font-family: "FontAwesome";
+            content: "\f107";
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: block;
+            transition: transform 300ms;
+          }
+
+          &.is-open {
+            &:after {
+              transform: rotateZ(180deg);
+            }
+          }
+
+          &.is-disabled {
+            opacity: 0.5;
+            background-color: grey;
+          }
+        }
+
+        .CustomTriggerCSS {
+          background-color: lightcoral;
+          transition: background-color 200ms ease;
+        }
+
+        .CustomTriggerCSS--open {
+          background-color: darkslateblue;
+        }
+
+        .Collapsible__custom-sibling {
+          padding: 5px;
+          font-size: 12px;
+          background-color: #cbb700;
+          color: black;
+        }
+      }
+
+      .filter-menu {
+        // width: 250px;
+        padding: 0 5px;
+        box-shadow: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-align: left;
+
+        .rc-menu-item {
+          padding-right: 10px;
+        }
+
+        .rc-menu-submenu-title {
+          width: 130px;
+          text-align: left;
+        }
+        .rc-menu-submenu.rc-menu-submenu-inline.submenu {
+          background-color: rgba(0, 0, 0, 0.336);
+
+          :hover {
+            background-color: rgba(0, 0, 0, 0.336);
+          }
+        }
+
+        .submenu {
+          background-color: rgba(0, 0, 0, 0.336);
+
+          .menu-item {
+            background-color: white;
+            border: 1px black dotted;
+
+            :hover {
+              background-color: rgba(67, 58, 54, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .shop-page-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 0;
+
+    h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+      text-shadow: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      text-transform: capitalize;
+      padding: 20px 0;
+    }
+  }
+
+  .shop-section {
+    z-index: 0;
+    .product-preview-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      z-index: 0;
+    }
+  }
+}

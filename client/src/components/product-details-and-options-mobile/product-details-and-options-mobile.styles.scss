@@ -1,0 +1,100 @@
+.product-page-details-and-options-container-mobile {
+  width: 100vw;
+  font-family: "Vollkorn SC", serif;
+
+  .product-details {
+    width: 100%;
+    .product-category-title {
+      font-size: 15px;
+      padding: 5px 0;
+      color: rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+    .product-name {
+      font-size: 25px;
+      padding: 5px 0;
+      text-align: center;
+    }
+    .product-price {
+      font-size: 30px;
+      padding: 5px 0;
+    }
+  }
+  .product-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .product-color-options {
+      display: flex;
+      padding: 10px 0;
+      flex-direction: row;
+      align-items: center;
+      .product-color-title {
+        font-size: 18px;
+      }
+
+      .product-color {
+        font-weight: bolder;
+        padding: 0 5px;
+        font-size: 20px;
+      }
+    }
+
+    .quantity-and-add-to-cart-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .quantity-picker {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: rgb(255, 255, 255) 1.5px solid;
+        box-shadow: 5px rgb(255, 255, 255);
+        width: 175px;
+        padding: 10px 5px;
+        background-color: white;
+
+        .quantity-picker-sign {
+          margin: 0 20px;
+          cursor: pointer;
+        }
+
+        .quantity {
+          font-size: 25px;
+        }
+      }
+
+      .add-to-cart-or-wishlist-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .wishlist-button {
+          display: none;
+          margin: 0 20px;
+          cursor: pointer;
+          color: crimson;
+
+          :hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 17px;
+
+    .detail-icon {
+      font-size: 10px;
+      margin: 2px 10px;
+    }
+  }
+}

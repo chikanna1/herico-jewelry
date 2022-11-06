@@ -1,0 +1,22 @@
+.search-container {
+  width: 100vw;
+  .search-input {
+    width: 100%;
+    .search-form {
+      display: flex;
+      flex-direction: row;
+
+      .group {
+        width: 100%;
+      }
+
+      .submit {
+        display: inline;
+        align-self: flex-end;
+        padding-bottom: 70px;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

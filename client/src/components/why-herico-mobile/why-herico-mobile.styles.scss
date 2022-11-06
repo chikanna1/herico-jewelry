@@ -1,0 +1,51 @@
+.why-herico-container-mobile {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+
+  .right-side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .jewelry-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 100%;
+    }
+
+    .first-image {
+      background-position-y: -100px;
+    }
+    .second-image {
+      background-position-y: -170px;
+    }
+
+    .image-text-box {
+      box-sizing: border-box;
+
+      .jewelry-text {
+        text-align: center;
+        padding: 75px;
+        height: 350px;
+        max-height: 350px;
+
+        h3 {
+          font-family: "Vollkorn SC", serif;
+          font-size: 35px;
+        }
+
+        p {
+          margin-top: 25px;
+          font-family: "Vollkorn SC", serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

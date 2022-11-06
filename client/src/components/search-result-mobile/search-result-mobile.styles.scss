@@ -1,0 +1,33 @@
+.search-item-container-mobile {
+  width: auto;
+  display: flex;
+  height: auto;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  .search-item-details-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 5px;
+
+    img {
+      width: 40%;
+    }
+
+    .name {
+      font-size: 15px;
+      text-align: center;
+      text-transform: capitalize;
+      text-decoration: underline;
+      margin-left: 15px;
+    }
+  }
+
+  .price {
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,165 @@
+.header-container-mobile {
+  padding: 10px 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+
+  display: flex;
+  overflow: hidden;
+
+  justify-content: space-around;
+  align-items: center;
+  .hamburger-menu {
+    .header-mobile-dock {
+      .close-section {
+        width: 100%;
+        .close-button {
+          display: block;
+          margin-left: auto;
+          margin-right: 0;
+          padding: 10px;
+          cursor: pointer;
+        }
+        .divider {
+          padding: 10px;
+          color: black;
+        }
+      }
+
+      .links-section {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+
+        .header-link {
+          padding: 15px 0;
+        }
+      }
+    }
+
+    .bm-burger-button {
+      width: 50px;
+      height: 30px;
+      margin-right: 50px;
+      align-self: flex-end;
+      position: relative;
+    }
+
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+      background: #373a47;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+      background: #a90000;
+    }
+
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+      height: 50px;
+      width: 50px;
+    }
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: #bdc3c7;
+    }
+
+    /*
+      Sidebar wrapper styles
+      Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+      */
+    .bm-menu-wrap {
+      position: fixed;
+      height: 100%;
+    }
+
+    /* General sidebar styles */
+    .hamburger-menu-slide {
+      background: #757678;
+      padding: 2.5em 1.5em 0;
+      font-size: 1.15em;
+      line-height: 300%;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+      fill: #373a47;
+    }
+
+    /* Wrapper for item list */
+    .bm-item-list {
+      color: #b8b7ad;
+      padding: 0.8em;
+    }
+
+    /* Individual item */
+    .bm-item {
+      display: inline-block;
+    }
+
+    /* Styling of overlay */
+    .bm-overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .header-link {
+      padding: 0 8px;
+      text-decoration: none;
+      font-family: "Vollkorn SC", serif;
+      color: black;
+      font-weight: 700;
+      font-size: large;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .logo-mobile {
+    img {
+      height: 30px;
+      margin: 0px 0 0px 40px;
+    }
+  }
+
+  .search-button {
+    .search-icon {
+      cursor: pointer;
+    }
+
+    .search-bar-dock {
+      overflow-x: hidden;
+      width: 100%;
+      .search-mobile-dock {
+        overflow-x: hidden;
+        width: 100%;
+        .close-section {
+          .close-button {
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+            padding: 5px 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-button {
+    .cart-menu {
+      background-color: #a90000;
+    }
+  }
+}
