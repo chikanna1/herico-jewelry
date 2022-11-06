@@ -10,8 +10,8 @@ app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 app.use(express.json());
 
-const YOUR_DOMAIN = process.env.CLIENT_URL;
-// const YOUR_DOMAIN = "http://localhost:3000/checkout";
+// const YOUR_DOMAIN = process.env.CLIENT_URL;
+const YOUR_DOMAIN = "http://herico.herokuapp.com/checkout";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
