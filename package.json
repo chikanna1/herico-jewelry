@@ -2,7 +2,7 @@
   "name": "herico-jewelry",
   "version": "1.0.0",
   "description": "Front/Back End NPM file",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd ./server && node server.js ",
