@@ -8,11 +8,15 @@ const path = require("path");
 
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 
+const indexFile = app.use(
+  express.static(path.resolve(__dirname, "../client/build/index.html"))
+);
+
 app.use(express.json());
 
 // const YOUR_DOMAIN = process.env.CLIENT_URL;
 // const YOUR_DOMAIN = "https://www.hericojewelry.com/";
-const YOUR_DOMAIN = "http://localhost/";
+const YOUR_DOMAIN = "https://www.hericojewelry.com/checkout";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
@@ -50,14 +54,11 @@ app.post("/create-checkout-session", async (req, res) => {
 const port = process.env.PORT || 5000;
 
 app.get("/*", function (req, res) {
-  res.sendFile(
-    path.join(__dirname, path.resolve(__dirname, "../client/build/index.html")),
-    function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
+  res.sendFile(indexFile, function (err) {
+    if (err) {
+      res.status(500).send(err);
     }
-  );
+  });
 });
 
 app.listen(port, () => console.log(`Running on  ${port}`));
