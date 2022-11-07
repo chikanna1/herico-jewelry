@@ -63,7 +63,7 @@ const HeaderMobile = () => {
                 <div className="links-section">
                   <Link
                     className="header-link"
-                    to="shop/products"
+                    to="shop/products/all"
                     onClick={toggleMenuOpen}
                   >
                     SHOP
@@ -85,10 +85,10 @@ const HeaderMobile = () => {
 
                   <Link
                     className="header-link"
-                    to="article-of-month"
+                    to="brand-ambassador-program"
                     onClick={toggleMenuOpen}
                   >
-                    REFER A FRIEND
+                    AMBASSADOR PROGRAM
                   </Link>
                 </div>
               </div>

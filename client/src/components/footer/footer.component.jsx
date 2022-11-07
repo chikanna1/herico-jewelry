@@ -98,28 +98,40 @@ const Footer = () => {
           </form>
         </div>
         <div className="social-media-links">
-          <Link className="social-media-icon-link" to="shop">
+          <Link
+            className="social-media-icon-link"
+            to="https://www.facebook.com/profile.php?id=100087326212607"
+          >
             <FontAwesomeIcon
               className="social-media-icon"
               icon={["fab", "facebook"]}
               size="1x"
             />
           </Link>
-          <Link className="social-media-icon-link" to="shop">
+          <Link
+            className="social-media-icon-link"
+            to="https://www.instagram.com/hericojewelry/"
+          >
             <FontAwesomeIcon
               className="social-media-icon"
               icon={["fab", "instagram"]}
               size="1x"
             />
           </Link>
-          <Link className="social-media-icon-link" to="shop">
+          <Link
+            className="social-media-icon-link"
+            to="https://twitter.com/hericojewelry/"
+          >
             <FontAwesomeIcon
               className="social-media-icon"
               icon={["fab", "twitter"]}
               size="1x"
             />
           </Link>
-          <Link className="social-media-icon-link" to="shop">
+          <Link
+            className="social-media-icon-link"
+            to="https://www.pinterest.com/hericojewelry/"
+          >
             <FontAwesomeIcon
               className="social-media-icon"
               icon={["fab", "pinterest"]}

@@ -8,7 +8,7 @@ import ProductMaterialsSection from "../../components/product-materials-section/
 import OtherPiecesYouWillLove from "../../components/other-pieces-you-will-love/other-pieces-you-will-love.component";
 import { CategoriesContext } from "../../contexts/categories.context";
 import SHOP_DATA from "../../assets/launching-shop-data";
-import ReactDelayRender from "react-delay-render";
+
 let product;
 
 const ProductPage = () => {

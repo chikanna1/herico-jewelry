@@ -44,6 +44,7 @@ import PrivacyPolicyPage from "./pages/privacy-policy/privacy-policy.page";
 import TermsOfServicePage from "./pages/terms-of-service/terms-of-service.page";
 import SeasonsDealsPage from "./pages/seasons-deals/seasons-deals.page";
 import AmbassadorProgramPage from "./pages/ambassador-program/ambassador-program.page";
+import AffirmPage from "./pages/affirm/affirm.page";
 
 import CheckoutCompletePage from "./pages/checkout-complete/checkout-success.page";
 
@@ -153,6 +154,7 @@ const App = () => {
             path="/checkout-success"
             element={<CheckoutCompletePage />}
           />
+          <Route exact path="/affirm" element={<AffirmPage />} />
         </Routes>
       </ScrollToTop>
 

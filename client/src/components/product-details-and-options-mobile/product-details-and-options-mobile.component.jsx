@@ -4,34 +4,21 @@ import Button from "../button/button.component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Collapsible from "react-collapsible";
-import { addItemToCart, setIsCartOpen } from "../../store/cart/cart.actions";
-import { useSelector } from "react-redux/es/hooks/useSelector";
-import { useDispatch } from "react-redux/es/hooks/useDispatch";
+import { useDispatch } from "react-redux/es/exports";
+import { setIsCartOpen } from "../../store/cart/cart.actions";
+import { useSelector } from "react-redux/es/exports";
 import { selectCartItems } from "../../store/cart/cart.selector";
+import { addItemToCart } from "../../store/cart/cart.actions";
 
 const ProductDetailsAndOptionsMobile = ({ item }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
 
-  function addQuantity() {
-    setQuantity((prevState) => prevState + 1);
-  }
-  function removeQuantity() {
-    if (quantity === 0) {
-      return;
-    }
-    setQuantity((prevState) => prevState - 1);
-  }
-
-  const addProductToCart = (quantity = 1) => {
-    if (quantity === 0) {
-      return;
-    }
+  const addProductToCart = () => {
     console.log(quantity);
     dispatch(addItemToCart(cartItems, item, quantity));
-    setQuantity(0);
     dispatch(setIsCartOpen(true));
     setTimeout(() => dispatch(setIsCartOpen(false)), 2000);
   };

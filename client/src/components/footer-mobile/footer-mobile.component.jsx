@@ -35,50 +35,49 @@ const FooterMobile = () => {
         <div className="left-side">
           <div className="menu-section">
             <h4 className="menu-title">Shop</h4>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="shop/products/all">
               Bracelets
             </Link>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="shop/products/all">
               Necklaces
             </Link>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="shop/products/all">
               Earrings
             </Link>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="shop/products/all">
               Rings
             </Link>
           </div>
           <div className="menu-section">
             <h4 className="menu-title">About</h4>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="glossary">
               Glossary
             </Link>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="faqs">
               Faqs
             </Link>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="privacy-policy">
               Privacy & Accessibility
             </Link>
-            <Link className="footer-link" to="shop">
-              Stockist
+            <Link className="footer-link" to="terms-of-service">
+              Terms of Service
             </Link>
           </div>
         </div>
         <div className="right-side">
           <div className="menu-section">
             <h4 className="menu-title">Services</h4>
-            <Link className="footer-link" to="shop">
+            <Link className="footer-link" to="affirm">
               Affirm
             </Link>
-            <Link className="footer-link" to="shop">
-              Appointment
-            </Link>
-            <Link className="footer-link" to="shop">
-              Care Guide
-            </Link>
-            <Link className="footer-link" to="shop">
-              Size Guide
-            </Link>
+            {/*
+          <Link className="footer-link" to="care-guide">
+          Care Guide
+          </Link>
+          <Link className="footer-link" to="size-guide">
+          Size Guide
+          </Link>
+        */}
           </div>
           <div className="email">
             <h3>Keep up with our Antics</h3>
@@ -104,28 +103,40 @@ const FooterMobile = () => {
         </div>
       </div>
       <div className="social-media-links">
-        <Link className="social-media-icon-link" to="shop">
+        <Link
+          className="social-media-icon-link"
+          to="https://www.facebook.com/profile.php?id=100087326212607"
+        >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "facebook"]}
             size="1x"
           />
         </Link>
-        <Link className="social-media-icon-link" to="shop">
+        <Link
+          className="social-media-icon-link"
+          to="https://www.instagram.com/hericojewelry/"
+        >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "instagram"]}
             size="1x"
           />
         </Link>
-        <Link className="social-media-icon-link" to="shop">
+        <Link
+          className="social-media-icon-link"
+          to="https://twitter.com/hericojewelry/"
+        >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "twitter"]}
             size="1x"
           />
         </Link>
-        <Link className="social-media-icon-link" to="shop">
+        <Link
+          className="social-media-icon-link"
+          to="https://www.pinterest.com/hericojewelry/"
+        >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "pinterest"]}
