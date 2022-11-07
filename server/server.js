@@ -11,7 +11,8 @@ app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.use(express.json());
 
 // const YOUR_DOMAIN = process.env.CLIENT_URL;
-const YOUR_DOMAIN = "https://www.hericojewelry";
+// const YOUR_DOMAIN = "https://www.hericojewelry.com/";
+const YOUR_DOMAIN = "http://localhost/";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
@@ -39,13 +40,24 @@ app.post("/create-checkout-session", async (req, res) => {
     line_items: line_items,
     mode: "payment",
     // success_url: `${YOUR_DOMAIN}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
-    success_url: `${YOUR_DOMAIN}/checkout-success`,
-    cancel_url: `${YOUR_DOMAIN}/checkout`,
+    success_url: `${YOUR_DOMAIN}/`,
+    cancel_url: `${YOUR_DOMAIN}/`,
   });
 
   res.json({ id: session.id });
 });
 
 const port = process.env.PORT || 5000;
+
+app.get("/*", function (req, res) {
+  res.sendFile(
+    path.join(__dirname, path.resolve(__dirname, "../client/build/index.html")),
+    function (err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    }
+  );
+});
 
 app.listen(port, () => console.log(`Running on  ${port}`));
