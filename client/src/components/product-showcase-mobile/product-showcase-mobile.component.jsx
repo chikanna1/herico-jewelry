@@ -15,9 +15,9 @@ const ProductShowcaseMobile = () => (
       <h3>SHOP MORE OF THIS COLLECTION</h3>
     </div>
     <div className="product-showcase-mobile">
-      <ProductPreview size={"mobile"} item={item1} />
-      <ProductPreview size={"mobile"} item={item2} />
-      <ProductPreview size={"mobile"} item={item3} />
+      <ProductPreview size={"mobile"} displayPrice={false} item={item1} />
+      <ProductPreview size={"mobile"} displayPrice={false} item={item2} />
+      <ProductPreview size={"mobile"} displayPrice={false} item={item3} />
     </div>
   </div>
 );

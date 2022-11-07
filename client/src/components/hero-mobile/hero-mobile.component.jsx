@@ -24,7 +24,7 @@ const HeroMobile = () => (
         <div className="shop-title-text">
           <p className="shop-subtitle">LUXURY AFRICAN JEWELRY</p>
         </div>
-        <Link to="/shop/products">
+        <Link to="/shop/products/all">
           <Button>Shop Now</Button>
         </Link>
       </div>
