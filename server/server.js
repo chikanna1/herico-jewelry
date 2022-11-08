@@ -14,9 +14,9 @@ const indexFile = app.use(
 
 app.use(express.json());
 
-const DOMAIN = process.env.CLIENT_URL;
+// const DOMAIN = process.env.CLIENT_URL;
 // const YOUR_DOMAIN = "https://www.hericojewelry.com/";
-// const YOUR_DOMAIN = "http://www.hericojewelry.com";
+const YOUR_DOMAIN = "herico.herokuapp.com/";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
