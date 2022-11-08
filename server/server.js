@@ -43,8 +43,8 @@ app.post("/create-checkout-session", async (req, res) => {
     },
     line_items: line_items,
     mode: "payment",
-    success_url: `${DOMAIN}/checkout-success`,
-    cancel_url: `${DOMAIN}/checkout`,
+    success_url: `${DOMAIN}/#/checkout-success`,
+    cancel_url: `${DOMAIN}/#/checkout`,
   });
 
   res.json({ id: session.id });
@@ -53,7 +53,9 @@ app.post("/create-checkout-session", async (req, res) => {
 const port = process.env.PORT || 5000;
 
 app.get("/*", function (req, res) {
-  app.use(express.static(path.resolve(__dirname, "../client/build")));
+  app.use(
+    express.static(path.resolve(__dirname, "../client/build/index.html"))
+  );
 });
 
 app.listen(port, () => console.log(`Running on  ${port}`));

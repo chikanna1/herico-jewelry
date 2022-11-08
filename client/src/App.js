@@ -106,55 +106,59 @@ const App = () => {
           />
           <Route
             exact
-            path="/shop/products/:filter"
+            path="/#/shop/products/:filter"
             element={isMobileDevice ? <ShopPageMobile /> : <ShopPage />}
           />
-          <Route exact path="/sign-in" element={<SignInAndSignUpPage />} />
-          <Route exact path="/my-account" element={<AccountPage />} />
+          <Route exact path="/#/sign-in" element={<SignInAndSignUpPage />} />
+          <Route exact path="/#/my-account" element={<AccountPage />} />
           <Route
             exact
-            path="/product-details/:id"
+            path="/#/product-details/:id"
             element={isMobileDevice ? <ProductPageMobile /> : <ProductPage />}
           />
           <Route
             exact
-            path="/checkout"
+            path="/#/checkout"
             element={isMobileDevice ? <CheckoutPageMobile /> : <CheckoutPage />}
           />
-          <Route exact path="/search/results" element={<ProductPage />} />
+          <Route exact path="/#/search/results" element={<ProductPage />} />
           <Route
             exact
-            path="/about"
+            path="/#/about"
             element={isMobileDevice ? <AboutPageMobile /> : <AboutPage />}
           />
           <Route
             exact
-            path="/glossary"
+            path="/#/glossary"
             element={isMobileDevice ? <GlossaryPageMobile /> : <GlossaryPage />}
           />
           <Route
             exact
-            path="/faqs"
+            path="/#/faqs"
             element={isMobileDevice ? <FAQsPageMobile /> : <FAQsPage />}
           />
-          <Route exact path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route exact path="/seasons-deals" element={<SeasonsDealsPage />} />
           <Route
             exact
-            path="/brand-ambassador-program"
+            path="/#/privacy-policy"
+            element={<PrivacyPolicyPage />}
+          />
+          <Route exact path="/#/seasons-deals" element={<SeasonsDealsPage />} />
+          <Route
+            exact
+            path="/#/brand-ambassador-program"
             element={<AmbassadorProgramPage />}
           />
           <Route
             exact
-            path="/terms-of-service"
+            path="/#/terms-of-service"
             element={<TermsOfServicePage />}
           />
           <Route
             exact
-            path="/checkout-success"
+            path="/#/checkout-success"
             element={<CheckoutCompletePage />}
           />
-          <Route exact path="/affirm" element={<AffirmPage />} />
+          <Route exact path="/#/affirm" element={<AffirmPage />} />
         </Routes>
       </ScrollToTop>
 
