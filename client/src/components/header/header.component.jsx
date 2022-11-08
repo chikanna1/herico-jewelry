@@ -22,11 +22,11 @@ const Header = () => {
     <Fragment>
       <div className="header-container">
         <div className="header-menu left">
-          <Link className="header-link" to="/#/shop/products/all">
+          <Link className="header-link" to="shop/products/all">
             SHOP
           </Link>
 
-          <Link className="header-link" to="/#/seasons-deals">
+          <Link className="header-link" to="seasons-deals">
             HOLIDAY GIFT SHOP
           </Link>
           {/*<Link className="header-link" to="article-of-month">
@@ -43,7 +43,7 @@ const Header = () => {
 
         <div className="right-menu">
           <div className="header-menu right">
-            <Link className="header-link" to="/#/about">
+            <Link className="header-link" to="about">
               ABOUT
             </Link>
 
@@ -57,7 +57,7 @@ const Header = () => {
               </Link>
             )*/}
 
-            <Link className="header-link" to="/#/brand-ambassador-program">
+            <Link className="header-link" to="brand-ambassador-program">
               AMBASSADOR PROGRAM
             </Link>
             <CartIcon />
