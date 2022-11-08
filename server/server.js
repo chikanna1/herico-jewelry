@@ -52,10 +52,12 @@ app.post("/create-checkout-session", async (req, res) => {
 
 const port = process.env.PORT || 5000;
 
-app.get("/*", function (req, res) {
-  app.use(
-    express.static(path.resolve(__dirname, "../client/build/index.html"))
-  );
+app.get("/*", (req, res) => {
+  let url = path.join(__dirname, "../client/build", "index.html");
+  if (!url.startsWith("/app/"))
+    // we're on local windows
+    url = url.substring(1);
+  res.sendFile(url);
 });
 
 app.listen(port, () => console.log(`Running on  ${port}`));
