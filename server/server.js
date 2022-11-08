@@ -52,8 +52,8 @@ app.post("/create-checkout-session", async (req, res) => {
 
 const port = process.env.PORT || 5000;
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
 
 app.listen(port, () => console.log(`Running on  ${port}`));
