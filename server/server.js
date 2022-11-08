@@ -14,9 +14,9 @@ const indexFile = app.use(
 
 app.use(express.json());
 
-// const DOMAIN = process.env.CLIENT_URL;
+const DOMAIN = process.env.CLIENT_URL;
 // const YOUR_DOMAIN = "https://www.hericojewelry.com/";
-const YOUR_DOMAIN = "herico.herokuapp.com/";
+// const YOUR_DOMAIN = "http://www.hericojewelry.com";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
@@ -52,8 +52,12 @@ app.post("/create-checkout-session", async (req, res) => {
 
 const port = process.env.PORT || 5000;
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
-// });
+app.get("*", (req, res) => {
+  let url = path.join(__dirname, "../client/build", "index.html");
+  if (!url.startsWith("/app/"))
+    // we're on local windows
+    url = url.substring(1);
+  res.sendFile(url);
+});
 
 app.listen(port, () => console.log(`Running on  ${port}`));
