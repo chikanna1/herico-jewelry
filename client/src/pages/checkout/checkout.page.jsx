@@ -16,6 +16,8 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 import { loadStripe } from "@stripe/stripe-js";
 
+const serverURL = process.env.SERVER_URL;
+
 let stripePromise;
 
 const getStripe = () => {

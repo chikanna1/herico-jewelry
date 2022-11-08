@@ -14,9 +14,9 @@ const indexFile = app.use(
 
 app.use(express.json());
 
-// const YOUR_DOMAIN = process.env.CLIENT_URL;
+const DOMAIN = process.env.CLIENT_URL;
 // const YOUR_DOMAIN = "https://www.hericojewelry.com/";
-const YOUR_DOMAIN = "https://www.hericojewelry.com/";
+// const YOUR_DOMAIN = "http://www.hericojewelry.com";
 
 app.post("/create-checkout-session", async (req, res) => {
   const line_items = req.body.cartItems.map((item) => {
@@ -43,9 +43,8 @@ app.post("/create-checkout-session", async (req, res) => {
     },
     line_items: line_items,
     mode: "payment",
-    // success_url: `${YOUR_DOMAIN}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
-    success_url: `${YOUR_DOMAIN}/`,
-    cancel_url: `${YOUR_DOMAIN}/checkout`,
+    success_url: `${DOMAIN}/checkout-success`,
+    cancel_url: `${DOMAIN}/checkout`,
   });
 
   res.json({ id: session.id });
