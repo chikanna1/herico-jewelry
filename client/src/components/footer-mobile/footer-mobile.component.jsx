@@ -103,46 +103,54 @@ const FooterMobile = () => {
         </div>
       </div>
       <div className="social-media-links">
-        <Link
+        <a
           className="social-media-icon-link"
-          to="https://www.facebook.com/profile.php?id=100087326212607"
+          href="https://www.facebook.com/profile.php?id=100087326212607"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "facebook"]}
             size="1x"
           />
-        </Link>
-        <Link
+        </a>
+        <a
           className="social-media-icon-link"
-          to="https://www.instagram.com/hericojewelry/"
+          href="https://www.instagram.com/hericojewelry/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "instagram"]}
             size="1x"
           />
-        </Link>
-        <Link
+        </a>
+        <a
           className="social-media-icon-link"
-          to="https://twitter.com/hericojewelry/"
+          href="https://twitter.com/hericojewelry/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "twitter"]}
             size="1x"
           />
-        </Link>
-        <Link
+        </a>
+        <a
           className="social-media-icon-link"
-          to="https://www.pinterest.com/hericojewelry/"
+          href="https://www.pinterest.com/hericojewelry/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon
             className="social-media-icon"
             icon={["fab", "pinterest"]}
             size="1x"
-          />{" "}
-        </Link>
+          />
+        </a>
       </div>
     </div>
   );
