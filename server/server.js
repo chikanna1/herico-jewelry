@@ -60,9 +60,7 @@ app.get("/*", function (req, res) {
     "Index File Resolve = " +
       path.resolve(__dirname, "../client/build/index.html")
   );
-  res.sendFile(
-    express.static(path.resolve(__dirname, "../client/build/index.html"))
-  );
+  res.sendFile(path.resolve(__dirname, "../client/build/index.html"));
 });
 
 app.listen(port, () => console.log(`Running on  ${port}`));
