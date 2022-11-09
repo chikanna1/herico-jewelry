@@ -14,7 +14,8 @@ app.use(express.json());
 
 // const DOMAIN = "http://herico.herokuapp.com";
 // const DOMAIN = process.env.CLIENT_URL;
-const DOMAIN = "http://herico.herokuapp.com";
+// const DOMAIN = "http://herico.herokuapp.com";
+const DOMAIN = "http://localhost:3000";
 // const YOUR_DOMAIN = "http://www.hericojewelry.com";
 
 app.post("/create-checkout-session", async (req, res) => {
@@ -54,6 +55,11 @@ const port = process.env.PORT || 5000;
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 app.get("/*", function (req, res) {
+  console.log("Index File Path is " + indexFile);
+  console.log(
+    "Index File Resolve = " +
+      path.resolve(__dirname, "../client/build/index.html")
+  );
   res.sendFile(
     express.static(path.resolve(__dirname, "../client/build/index.html"))
   );
