@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage-container">
-      <SignUpPopup />
+      {/*<SignUpPopup />*/}
       <Hero />
       <ProductShowcase />
       <VideoShowcase />
