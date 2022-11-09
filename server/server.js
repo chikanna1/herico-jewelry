@@ -15,7 +15,7 @@ app.use(express.json());
 // const DOMAIN = "http://herico.herokuapp.com";
 // const DOMAIN = process.env.CLIENT_URL;
 // const DOMAIN = "http://herico.herokuapp.com";
-const DOMAIN = "http://localhost:3000";
+const DOMAIN = "https://www.hericojewelry.com/";
 // const YOUR_DOMAIN = "http://www.hericojewelry.com";
 
 app.post("/create-checkout-session", async (req, res) => {
