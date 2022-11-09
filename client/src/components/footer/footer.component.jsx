@@ -86,6 +86,7 @@ const Footer = () => {
               name="email"
               value={email}
               onChange={handleEmailChange}
+              placeholder="Enter Your Email"
               required
             />
             <FontAwesomeIcon
