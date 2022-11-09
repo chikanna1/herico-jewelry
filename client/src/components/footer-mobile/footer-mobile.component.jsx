@@ -54,7 +54,7 @@ const FooterMobile = () => {
               Glossary
             </Link>
             <Link className="footer-link" to="faqs">
-              Faqs
+              FAQs
             </Link>
             <Link className="footer-link" to="privacy-policy">
               Privacy & Accessibility
@@ -80,7 +80,7 @@ const FooterMobile = () => {
         */}
           </div>
           <div className="email">
-            <h3>Keep up with our Antics</h3>
+            <h3>Sign up for Exclusives!</h3>
             <div className="email-input">
               <form className="sign-up-form" onSubmit={handleSubmitForm}>
                 <FormInput

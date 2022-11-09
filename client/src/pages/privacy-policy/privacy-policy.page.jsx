@@ -13,11 +13,7 @@ const PrivacyPolicyPage = () => {
       </p>
       <p>
         If you have additional questions or require more information about our
-        Privacy Policy, do not hesitate to contact us. Our Privacy Policy was
-        generated with the help of{" "}
-        <a href="https://www.gdprprivacynotice.com/">
-          GDPR Privacy Policy Generator
-        </a>
+        Privacy Policy, do not hesitate to contact us.
       </p>
       <h2>General Data Protection Regulation (GDPR)</h2>
       <p>We are a Data Controller of your information.</p>

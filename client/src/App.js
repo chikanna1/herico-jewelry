@@ -41,9 +41,17 @@ import FAQsPage from "./pages/faqs/faqs.page";
 import FAQsPageMobile from "./pages/faqs-mobile/faqs-mobile.page";
 
 import PrivacyPolicyPage from "./pages/privacy-policy/privacy-policy.page";
+import PrivacyPolicyPageMobile from "./pages/privacy-policy-mobile/privacy-policy-mobile.page";
+
 import TermsOfServicePage from "./pages/terms-of-service/terms-of-service.page";
+import TermsOfServicePageMobile from "./pages/terms-of-service-mobile/terms-of-service-mobile.page";
+
 import SeasonsDealsPage from "./pages/seasons-deals/seasons-deals.page";
+import SeasonsDealsPageMobile from "./pages/seasons-deals-mobile/seasons-deals-mobile.page";
+
 import AmbassadorProgramPage from "./pages/ambassador-program/ambassador-program.page";
+import AmbassadorProgramPageMobile from "./pages/ambassador-program-mobile/ambassador-program-mobile.page";
+
 import AffirmPage from "./pages/affirm/affirm.page";
 
 import CheckoutCompletePage from "./pages/checkout-complete/checkout-success.page";
@@ -137,17 +145,45 @@ const App = () => {
             path="/faqs"
             element={isMobileDevice ? <FAQsPageMobile /> : <FAQsPage />}
           />
-          <Route exact path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route exact path="/seasons-deals" element={<SeasonsDealsPage />} />
+          <Route
+            exact
+            path="/privacy-policy"
+            element={
+              isMobileDevice ? (
+                <PrivacyPolicyPageMobile />
+              ) : (
+                <PrivacyPolicyPage />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/seasons-deals"
+            element={
+              isMobileDevice ? <SeasonsDealsPageMobile /> : <SeasonsDealsPage />
+            }
+          />
           <Route
             exact
             path="/brand-ambassador-program"
-            element={<AmbassadorProgramPage />}
+            element={
+              isMobileDevice ? (
+                <AmbassadorProgramPageMobile />
+              ) : (
+                <AmbassadorProgramPage />
+              )
+            }
           />
           <Route
             exact
             path="/terms-of-service"
-            element={<TermsOfServicePage />}
+            element={
+              isMobileDevice ? (
+                <TermsOfServicePageMobile />
+              ) : (
+                <TermsOfServicePage />
+              )
+            }
           />
           <Route
             exact

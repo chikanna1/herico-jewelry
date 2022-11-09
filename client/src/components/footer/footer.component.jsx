@@ -53,7 +53,7 @@ const Footer = () => {
             Glossary
           </Link>
           <Link className="footer-link" to="faqs">
-            Faqs
+            FAQs
           </Link>
           <Link className="footer-link" to="privacy-policy">
             Privacy & Accessibility

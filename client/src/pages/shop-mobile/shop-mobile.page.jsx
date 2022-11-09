@@ -84,21 +84,17 @@ const ShopPageMobile = () => {
         return a.productPrice - b.productPrice;
       });
       console.log(sortedProducts);
-    } else if (params === "Under500") {
+    } else if (params === "Under250") {
       sortedProducts = allProducts.filter((product) => {
-        return product.productPrice < 500;
+        return product.productPrice < 250;
       });
-    } else if (params === "500to1000") {
+    } else if (params === "250to500") {
       sortedProducts = allProducts.filter((product) => {
-        return product.productPrice > 500 && product.productPrice <= 1000;
+        return product.productPrice > 250 && product.productPrice <= 500;
       });
-    } else if (params === "1000to3000") {
+    } else if (params === "Over500") {
       sortedProducts = allProducts.filter((product) => {
-        return product.productPrice > 1000 && product.productPrice <= 3000;
-      });
-    } else if (params === "3000to5000") {
-      sortedProducts = allProducts.filter((product) => {
-        return product.productPrice > 3000 && product.productPrice <= 5000;
+        return product.productPrice > 500;
       });
     } else if (params === "NewArrivals") {
       sortedProducts = allProducts.sort((a, b) => {
@@ -107,6 +103,10 @@ const ShopPageMobile = () => {
     } else if (params === "BestSellers") {
       sortedProducts = allProducts.sort((a, b) => {
         return b.productPrice - a.productPrice;
+      });
+    } else if (params === "FashionSets") {
+      sortedProducts = allProducts.filter((product) => {
+        return (product.category = "Fashion Sets");
       });
     }
     setDisplayedProducts(sortedProducts);
@@ -157,27 +157,21 @@ const ShopPageMobile = () => {
                 <Collapsible trigger={<p>PRICES</p>}>
                   <div
                     className="filter-category"
-                    onClick={() => filterFunction("Under500")}
+                    onClick={() => filterFunction("Under250")}
                   >
-                    <p>UNDER $500</p>
+                    <p>UNDER $250</p>
                   </div>
                   <div
                     className="filter-category"
-                    onClick={() => filterFunction("500to1000")}
+                    onClick={() => filterFunction("250to500")}
                   >
-                    <p>$500 - $1000</p>
+                    <p>$250 - $500</p>
                   </div>
                   <div
                     className="filter-category"
-                    onClick={() => filterFunction("1000to3000")}
+                    onClick={() => filterFunction("Over500")}
                   >
-                    <p>$1000 - 3000</p>
-                  </div>
-                  <div
-                    className="filter-category"
-                    onClick={() => filterFunction("3000to5000")}
-                  >
-                    <p>$3000 - $5000</p>
+                    <p>OVER $500</p>
                   </div>
                 </Collapsible>
               </Collapsible>
@@ -188,6 +182,12 @@ const ShopPageMobile = () => {
                 open={filterTwoOpen}
                 handleTriggerClick={toggleFilterTwoOpen}
               >
+                <div
+                  className="filter-category"
+                  onClick={() => filterFunction("FashionSets")}
+                >
+                  <p>FASHION SETS</p>
+                </div>
                 <div
                   className="filter-category"
                   onClick={() => filterFunction("Necklaces")}

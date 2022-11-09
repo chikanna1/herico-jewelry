@@ -70,9 +70,9 @@ const FAQsPage = () => {
             for authorization from the credit card company. After we receive
             notification that the transaction is completed, we will begin
             production on your piece. Production time is typically 4-6 weeks.
-            When your new Jade Trau piece of jewelry is finished, we will email
-            you and let you know it is complete along with a tracking number for
-            your reference.
+            When your new Herico Jewelry piece of jewelry is finished, we will
+            email you and let you know it is complete along with a tracking
+            number for your reference.
           </p>
         </div>
         <div className="faq">
@@ -81,8 +81,8 @@ const FAQsPage = () => {
           </h1>
           <p className="faq-text">
             Yes, cancellations can be made within 24 hours from the time the
-            order was placed. Please contact info@jadetrau.com as soon as you
-            can if you wish to cancel your order.
+            order was placed. Please contact support@hericojewelry.com as soon
+            as you can if you wish to cancel your order.
           </p>
         </div>
         <div className="faq">
